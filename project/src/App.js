@@ -1,19 +1,22 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-
+import Weapon from "./components/Weapon";
+import axios from "axios";
+import Login from "./components/SignUp";
+import Home from "./components/Home"
+import Nav from "./components/Nav"
+import SignUp from "./components/SignUp"
 function App() {
   return (
-    <div>
-      
-      <h1>
-        Hello
-      </h1>
+    <>
+    
       <Routes>
-      <Route exact path="/" element={<Home />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/weapon" element={<Weapon />} />
+        <Route exact path="/home" element={<Home />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

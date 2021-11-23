@@ -1,0 +1,20 @@
+*{
+    width: auto;
+    height: auto;
+}
+.full{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(255, 102, 102);
+}
+/* img{
+    display: grid;
+    border: solid 3px;
+    width: 20%;
+    height: 90px;
+} */
+#imag{
+    display: flex;
+    
+}

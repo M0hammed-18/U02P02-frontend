@@ -1,10 +1,17 @@
 import React from "react";
+import "./style.css"
 
 const Nav = () => {
 
     return (
 <>
-<img src="https://www.logolynx.com/images/logolynx/e6/e6918e0617cdf3ee5cc64b6f44801b88.jpeg"/>
+<ul className="list">
+    <li>Home</li>
+    <li>Login</li>
+    <li>SingUp</li>
+    <li>Weapon</li>
+    
+</ul>
 </>
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = () => {
+const SingUp = () => {
 
     return (
 <>
@@ -10,4 +10,4 @@ const Login = () => {
 
     )
     }
-    export default Login;
+    export default SingUp;

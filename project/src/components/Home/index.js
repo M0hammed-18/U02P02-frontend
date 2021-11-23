@@ -1,13 +1,16 @@
 import React from "react";
+import "./style.css"
 
-const Home = () => {
+const Nav = () => {
 
     return (
 <>
-<img src="https://www.logolynx.com/images/logolynx/e6/e6918e0617cdf3ee5cc64b6f44801b88.jpeg"/>
+<div className="homepage">
+<img src="http://honor.ancorathemes.com/wp-content/uploads/2017/11/logo-footer.png" id="logohome"></img>
+</div>
 </>
 
 
     )
     }
-    export default Home;
+    export default Nav;
