@@ -1,20 +1,12 @@
-*{
-    width: auto;
-    height: auto;
+* {
+  width: auto;
+  height: auto;
 }
-.full{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: rgb(255, 102, 102);
-}
-/* img{
+.full {
+    width: 100%;
     display: grid;
-    border: solid 3px;
-    width: 20%;
-    height: 90px;
-} */
+    flex-direction: row;
+}
 #imag{
-    display: flex;
-    
+    width: 30%;
 }

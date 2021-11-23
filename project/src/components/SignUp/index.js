@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-// import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
-
+import "./style.css";
 export default class Signup extends Component {
   constructor() {
     super();
     this.state = {
-      username: "",
+      name: "",
       email: "",
       password: "",
     };
-
-
     this.changeUserName = this.changeUserName.bind(this);
     this.changeEmail = this.changeEmail.bind(this);
     this.changePassword = this.changePassword.bind(this);
@@ -19,7 +16,7 @@ export default class Signup extends Component {
   }
   changeUserName(e) {
     this.setState({
-      username: e.target.value,
+      name: e.target.value,
     });
   }
   changeEmail(e) {
@@ -35,12 +32,13 @@ export default class Signup extends Component {
   submitSignUp(event) {
     event.preventDefault();
     const riges = {
-      username: this.state.username,
+      name: this.state.name,
       email: this.state.email,
       password: this.state.password,
     };
+
     if (
-      this.state.username.length > 0 &&
+      this.state.name.length > 0 &&
       this.state.email.length > 0 &&
       this.state.password.length > 0
     ) {
@@ -49,25 +47,32 @@ export default class Signup extends Component {
         .then((res) => console.log(res));
       window.location = "/home";
       this.setState({
-        username: "",
+        name: "",
         email: "",
         password: "",
       });
     } else window.alert("fill all fields");
   }
+
   render() {
     return (
       <div>
         <div className="contener">
           <div className="formDiv">
             <form onSubmit={this.submitSignUp}>
+              <h2>SignUp</h2>
+              <br />
               <input
                 type="text"
                 placeholder="User Name"
                 onChange={this.changeUserName}
-                value={this.state.username}
+                value={this.state.name}
                 className="form-control form-group"
               />
+              <br />
+              <br />
+              <br />
+
               <input
                 type="email"
                 placeholder="Email"
@@ -75,6 +80,9 @@ export default class Signup extends Component {
                 value={this.state.email}
                 className="form-control form-group"
               />
+              <br />
+              <br />
+              <br />
               <input
                 type="password"
                 placeholder="Password"
@@ -85,8 +93,9 @@ export default class Signup extends Component {
               <input
                 type="submit"
                 className="btn btn-danger btn-block"
-                value="submit"
+                value="Register"
               />
+              <p id="paragraph">Do you have account </p>
             </form>
           </div>
         </div>
@@ -94,4 +103,3 @@ export default class Signup extends Component {
     );
   }
 }
-
