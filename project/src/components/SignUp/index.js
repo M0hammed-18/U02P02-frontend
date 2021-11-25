@@ -46,7 +46,7 @@ export default class Signup extends Component {
       await axios
         .post("http://localhost:4000/users/create", riges)
         .then((res) => console.log(res));
-      window.location = "/home";
+      window.location = "/weapon";
       this.setState({
         name: "",
         email: "",

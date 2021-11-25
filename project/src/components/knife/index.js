@@ -13,6 +13,7 @@ const Knife = () => {
   const getweapon = async () => {
     const display = await axios.get('http://localhost:4000/product');
     console.log(display);
+    // eslint-disable-next-line
     setWeapn(display.data.filter(item=>item.kind=='knife'));
    
     
@@ -20,10 +21,12 @@ const Knife = () => {
   useEffect(() => {
     getweapon();
   }, []);
+  ///////
   const kick =()=>{
-    localStorage. clear()
+    localStorage.clear()
      navigate("/home");
   }
+  /////
   return (
     <>
     <Nav/>
@@ -40,7 +43,7 @@ const Knife = () => {
           
           <div className="full">
             
-            <img src={item.img} id="imag"/>
+            <img src={item.img}  alt="#"id="imag"/>
             <h5>{item.name}</h5>
             <h6>{item.price}</h6>
             

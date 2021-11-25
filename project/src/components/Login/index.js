@@ -24,6 +24,7 @@ const Login = () => {
     e.preventDefault();
     let ckeck = false;
 
+    // eslint-disable-next-line
     users.map((item) => {
       console.log(item.email);
       console.log(item.password);
@@ -34,11 +35,12 @@ const Login = () => {
     if (ckeck) {
       try {
         localStorage.setItem("newUser", JSON.stringify({ email }));
-        navigate("/home");
+        navigate("/weapon");
       } catch (error) {
         console.log("error ", error);
       }
     } else {
+      // eslint-disable-next-line
       let myWindow = window.alert("Email is wrong or password ");
     }
   };

@@ -23,7 +23,7 @@ const Nav = () => {
     <>
       <div className="wrapper">
         <NavLink to="/home" className="links">
-          <img id="logo" src={logo} />
+          <img id="logo" src={logo} alt="#" />
         </NavLink>
         <div className="navMenu">
           <NavLink to="/weapon" className="links">

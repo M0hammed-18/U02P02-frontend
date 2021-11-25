@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 import {  useNavigate } from "react-router";
 
@@ -40,10 +39,12 @@ const Home = () => {
             <img
               id="banner"
               src="https://previews.123rf.com/images/omnimoney/omnimoney1807/omnimoney180700005/106233273-modern-guns-automatic-weapon-machine-gun-and-pistol.jpg"
+              alt="#"
             />
             <img
               id="banner"
               src="https://m.media-amazon.com/images/S/aplus-media/sota/ad0d2cc6-f856-4c23-aa67-a2216f8b9ecd.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+              alt="#"
             />
           </div>
         </div>

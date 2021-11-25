@@ -14,6 +14,7 @@ const Arrow = () => {
   const getweapon = async () => {
     const display = await axios.get('http://localhost:4000/product');
     console.log(display);
+    // eslint-disable-next-line
     setWeapn(display.data.filter(item=>item.kind=='arrow'));
    
     
@@ -22,7 +23,7 @@ const Arrow = () => {
     getweapon();
   }, []);
   const kick =()=>{
-    localStorage. clear()
+    localStorage.clear()
      navigate("/SignUp");
   }
   return (
@@ -41,7 +42,7 @@ const Arrow = () => {
           
           <div className="full">
             
-            <img src={item.img} id="imag"/>
+            <img src={item.img} alt="#" id="imag"/>
             <h5 id="itemname">{item.name}</h5>
             <h6>{item.price}</h6>
             <BsFillCartFill />
