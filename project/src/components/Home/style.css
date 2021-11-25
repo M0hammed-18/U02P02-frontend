@@ -1,0 +1,29 @@
+.contenerr {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.contenerr img {
+  width: 100%;
+}
+.head {
+  color: rgb(240, 236, 13);
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+#banner {
+  width: 20%;
+  opacity: 0.4;
+  top: 500%;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.start {
+  margin-left: 500px;
+  top: 290px;
+  background-color: rgb(26, 23, 23);
+}

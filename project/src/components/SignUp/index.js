@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Nav from "../Nav/index";
 import axios from "axios";
 import "./style.css";
 export default class Signup extends Component {
@@ -29,7 +30,7 @@ export default class Signup extends Component {
       password: e.target.value,
     });
   }
-  submitSignUp(event) {
+ async submitSignUp (event) {
     event.preventDefault();
     const riges = {
       name: this.state.name,
@@ -42,7 +43,7 @@ export default class Signup extends Component {
       this.state.email.length > 0 &&
       this.state.password.length > 0
     ) {
-      axios
+      await axios
         .post("http://localhost:4000/users/create", riges)
         .then((res) => console.log(res));
       window.location = "/home";
@@ -55,7 +56,10 @@ export default class Signup extends Component {
   }
 
   render() {
+   
     return (
+      <>
+      <Nav/>
       <div>
         <div className="contener">
           <div className="formDiv">
@@ -100,6 +104,7 @@ export default class Signup extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

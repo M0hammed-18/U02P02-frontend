@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../Nav/index";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import "./style.css";
@@ -42,6 +43,8 @@ const Login = () => {
     }
   };
   return (
+    <>
+    <Nav/>
     <div>
       <div className="contener">
         <div className="formDiv">
@@ -78,6 +81,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 export default Login;

@@ -23,8 +23,8 @@
   box-shadow: -15px -5px 19px 1px rgba(0,0,0,0.81);
 -webkit-box-shadow: -15px -5px 19px 1px rgba(0,0,0,0.81);
 -moz-box-shadow: -15px -5px 19px 1px rgba(0,0,0,0.81);
-background-color:rgb(218, 191, 40);
-
+/* background-color:rgb(218, 191, 40);
+opacity: .6; */
   
 }
 #itemname{
@@ -34,7 +34,7 @@ background-color:rgb(218, 191, 40);
 
 #imag{
   width: 100%;
-  
+  opacity: 1;
 }
 #but{
   margin-top: 5%;
