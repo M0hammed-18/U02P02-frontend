@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   padding: 0.5 rem calc((100vw - 100px) / 2);
@@ -24,7 +24,7 @@
   cursor: pointer;
   color: rgb(80, 80, 80);
   font-size: 45px;
-  left: 120px;
+  left: 110px;
 }
 .navMenu {
   display: flex;
@@ -37,9 +37,8 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  right: 250px;
-  margin-right: 190px;
-  
+  right: 210px;
+  margin-right: 150px;
   height: 100%;
   cursor: pointer;
   background-color: rgb(218, 191, 40);

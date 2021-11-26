@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <>
       <div className="wrapper">
-        <NavLink to="/home" className="links">
+        <NavLink to="/" className="links">
           <img id="logo" src={logo} alt="#" />
         </NavLink>
         <div className="navMenu">
@@ -38,14 +38,14 @@ const Nav = () => {
           <NavLink to="/arrow" className="links">
             <GiHeavyArrow />
           </NavLink>
-                    
+
           <NavLink to="/login" className="links">
-            <IoLogIn/>
+            <IoLogIn />
           </NavLink>
           <NavLink to="/shop" className="links">
             <BsFillCartFill />
           </NavLink>
-          <NavLink to="/home" onClick={kick} className="links">
+          <NavLink to="/" onClick={kick} className="links">
             <IoLogOut />
           </NavLink>
         </div>

@@ -30,7 +30,7 @@ export default class Signup extends Component {
       password: e.target.value,
     });
   }
- async submitSignUp (event) {
+  async submitSignUp(event) {
     event.preventDefault();
     const riges = {
       name: this.state.name,
@@ -54,56 +54,54 @@ export default class Signup extends Component {
       });
     } else window.alert("fill all fields");
   }
-
   render() {
-   
     return (
       <>
-      <Nav/>
-      <div>
-        <div className="contener">
-          <div className="formDiv">
-            <form onSubmit={this.submitSignUp}>
-              <h2>SignUp</h2>
-              <br />
-              <input
-                type="text"
-                placeholder="User Name"
-                onChange={this.changeUserName}
-                value={this.state.name}
-                className="form-control form-group"
-              />
-              <br />
-              <br />
-              <br />
+        <Nav />
+        <div>
+          <div className="contener">
+            <div className="formDiv">
+              <form onSubmit={this.submitSignUp}>
+                <h2>SignUp</h2>
+                <br />
+                <input
+                  type="text"
+                  placeholder="User Name"
+                  onChange={this.changeUserName}
+                  value={this.state.name}
+                  className="form-control form-group"
+                />
+                <br />
+                <br />
+                <br />
 
-              <input
-                type="email"
-                placeholder="Email"
-                onChange={this.changeEmail}
-                value={this.state.email}
-                className="form-control form-group"
-              />
-              <br />
-              <br />
-              <br />
-              <input
-                type="password"
-                placeholder="Password"
-                onChange={this.changePassword}
-                value={this.state.password}
-                className="form-control form-group"
-              />
-              <input
-                type="submit"
-                className="btn btn-danger btn-block"
-                value="Register"
-              />
-              <p id="paragraph">Do you have account </p>
-            </form>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  onChange={this.changeEmail}
+                  value={this.state.email}
+                  className="form-control form-group"
+                />
+                <br />
+                <br />
+                <br />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  onChange={this.changePassword}
+                  value={this.state.password}
+                  className="form-control form-group"
+                />
+                <input
+                  type="submit"
+                  className="btn btn-danger btn-block"
+                  value="Register"
+                />
+                <p id="paragraph">Do you have account </p>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
       </>
     );
   }

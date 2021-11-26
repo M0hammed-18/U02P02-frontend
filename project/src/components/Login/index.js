@@ -46,43 +46,43 @@ const Login = () => {
   };
   return (
     <>
-    <Nav/>
-    <div>
-      <div className="contener">
-        <div className="formDiv">
-          <form onSubmit={submitlogin}>
-            <h2>Login</h2>
-            <br />
-            <br />
-            <input
-              type="email"
-              placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
-              className="form-control form-group"
-            />
-            <br />
-            <br />
-            <br />
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-              className="form-control form-group"
-            />
-            <input
-              type="submit"
-              className="btn btn-danger btn-block"
-              value="Login"
-            />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p onClick={registerPage}>Don't have an account ?</p>
-          </form>
+      <Nav />
+      <div>
+        <div className="contener">
+          <div className="formDiv">
+            <form onSubmit={submitlogin}>
+              <h2>Login</h2>
+              <br />
+              <br />
+              <input
+                type="email"
+                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+                className="form-control form-group"
+              />
+              <br />
+              <br />
+              <br />
+              <input
+                type="password"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+                className="form-control form-group"
+              />
+              <input
+                type="submit"
+                className="btn btn-danger btn-block"
+                value="Login"
+              />
+              <br />
+              <br />
+              <br />
+              <br />
+              <p onClick={registerPage}>Don't have an account ?</p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

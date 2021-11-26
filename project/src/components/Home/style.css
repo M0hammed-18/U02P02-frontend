@@ -23,7 +23,27 @@
   padding: 10px;
 }
 .start {
-  margin-left: 500px;
-  top: 290px;
+  top: 490px;
   background-color: rgb(26, 23, 23);
+  opacity: 0.3;
+}
+#startlogo {
+  width: 30%;
+  position: relative;
+  display: flex;
+  margin-top: 80px;
+  /* align-items: center; */
+  /* text-decoration: none; */
+  /* right: 210px; */
+  margin-right: 120px;
+  /* height: 100%; */
+  /* cursor: pointer; */
+  background-color: rgb(218, 191, 40);
+  border-radius: 60%;
+}
+#backlogo {
+  opacity: 0.1;
+}
+.banner {
+  background-image: "https://cdn.wallpapersafari.com/88/76/zU3HLn.png";
 }

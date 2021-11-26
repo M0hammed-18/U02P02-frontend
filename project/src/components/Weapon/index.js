@@ -1,28 +1,26 @@
 import React from "react";
-
 import Nav from "../Nav/index";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
-import { IoLogIn } from "react-icons/io5";
-// import { BsFillCartFill } from "react-icons/bs";
+import { BsFillCartFill } from "react-icons/bs";
 
 const Weapon = () => {
   const [weapn, setWeapn] = useState([]);
   const [local, setLocal] = useState("");
   const [remAdd, setRemAdd] = useState([]);
 
-
   const getweapon = async () => {
     const display = await axios.get("http://localhost:4000/product");
     console.log(display);
-    
+
     // eslint-disable-next-line
-    setWeapn(display.data.filter((item) =>  item.kind == "weapon"));
+    setWeapn(display.data.filter((item) => item.kind == "weapon"));
   };
   useEffect(() => {
     getweapon();
   }, []);
+
   const getLocalStorage = () => {
     const item = JSON.parse(localStorage.getItem("newUser"));
     setLocal(item);
@@ -69,33 +67,20 @@ const Weapon = () => {
     getLocalStorage();
   };
 
-
-  useEffect(() => {
-    // test1();
-  }, [remAdd]);
+  useEffect(() => {}, [remAdd]);
 
   return (
     <>
       <Nav />
-
-      <IoLogIn />
       <div className="mainwrapper">
         {weapn.map((item) => {
           return (
             <div className="full">
               <img src={item.img} alt="#" id="imag" />
               <h5 id="itemname">{item.name}</h5>
-              <h6>{item.price}</h6>
-              <button
-                onClick={() => {
-                  removeOrAdd(item._id);
-                }}
-              >
-                Add To Cart
-              </button>
-              {/* <BsFillCartFill onClick={() => removeOrAdd(item._id)}/> */}
+              <h6 id="itemprice">{item.price}</h6>
+              <BsFillCartFill id="ball" onClick={() => removeOrAdd(item._id)} />
             </div>
-            
           );
         })}{" "}
       </div>

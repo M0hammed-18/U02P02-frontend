@@ -9,6 +9,7 @@ import Ammo from "./components/Ammo";
 import Knife from "./components/knife";
 import Arrow from "./components/Arrow";
 import Shop from "./components/ShoppingBasket";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/knife" element={<Knife/>}/>
         <Route exact path="/arrow" element={<Arrow/>}/>
         <Route exact path="/shop" element={<Shop/>}/>
+        <Route exact path="/search" element={<Search/>}/>
       </Routes>
       
     </>

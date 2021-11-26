@@ -1,13 +1,33 @@
-import React from "react";
 
-const Search = () => {
+// import React, { useState } from "react";
+// import { useEffect } from "react";
+// import { VscSearch, VscChromeClose } from "react-icons/vsc";
+// import axios from "axios";
 
-    return (
-<>
-<img src="https://www.logolynx.com/images/logolynx/e6/e6918e0617cdf3ee5cc64b6f44801b88.jpeg"/>
-</>
+import { FaSearch } from 'react-icons/fa'
+
+import "./style.css";
+// import { useNavigate } from "react-router-dom";
 
 
-    )
-    }
-    export default Search;
+
+const Search = ({ searchpages }) => {
+
+
+  return (
+    <div className="search">
+    <div className="searchInputs">
+              <div className="searchBar">
+                  <input className="searchQueryInput" type="text" placeholder="Search" onChange={searchpages}/>
+                  <button className="searchQuerySubmit" type="submit">
+                      <FaSearch />
+                  </button>
+              </div>
+          </div>
+  </div>
+
+  );
+};
+
+export default Search;
+
