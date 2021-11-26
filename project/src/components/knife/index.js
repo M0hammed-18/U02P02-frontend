@@ -76,8 +76,8 @@ const Knife = () => {
           return (
             <div className="full">
               <img src={item.img} alt="#" id="imag" />
-              <h5>{item.name}</h5>
-              <h6>{item.price}</h6>
+              <h5 id="itemname">{item.name}</h5>
+              <h6 id="itemprice">{item.price}</h6>
               <BsFillCartFill id="ball" onClick={() => removeOrAdd(item._id)} />
             </div>
           );

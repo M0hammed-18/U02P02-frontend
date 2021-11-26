@@ -14,10 +14,12 @@ const Home = () => {
   return (
     <>
       <div className="contenerr">
+        <div className="leftside">
         <img
           id="backlogo"
           src="https://cdn.wallpapersafari.com/88/76/zU3HLn.png"
         />
+        </div>
         <div className="row">
           <form className="start">
             <img id="startlogo" src={logo} alt="#" />

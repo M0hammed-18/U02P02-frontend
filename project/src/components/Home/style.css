@@ -25,7 +25,7 @@
 .start {
   top: 490px;
   background-color: rgb(26, 23, 23);
-  opacity: 0.3;
+  opacity: 0.9;
 }
 #startlogo {
   width: 30%;
@@ -42,8 +42,13 @@
   border-radius: 60%;
 }
 #backlogo {
-  opacity: 0.1;
+  opacity: 0.4;
+  height: 45.5rem;
 }
-.banner {
+/* .banner {
   background-image: "https://cdn.wallpapersafari.com/88/76/zU3HLn.png";
+} */
+
+@media  screen and (max-width: 1084px){
+  
 }

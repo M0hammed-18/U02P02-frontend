@@ -77,8 +77,8 @@ const Ammo = () => {
           return (
             <div className="full">
               <img src={item.img} alt="#" id="imag" />
-              <h4>{item.name}</h4>
-              <h6>{item.price}</h6>
+              <h4 id="itemname">{item.name}</h4>
+              <h6 id="itemprice">{item.price}</h6>
               <BsFillCartFill id="ball" onClick={() => removeOrAdd(item._id)} />
             </div>
           );

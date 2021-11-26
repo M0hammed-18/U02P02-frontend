@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
 import { BsFillCartFill } from "react-icons/bs";
+import { useNavigate } from "react-router";
 
 const Weapon = () => {
   const [weapn, setWeapn] = useState([]);
   const [local, setLocal] = useState("");
   const [remAdd, setRemAdd] = useState([]);
+  const Navigate =useNavigate()
 
   const getweapon = async () => {
     const display = await axios.get("http://localhost:4000/product");
@@ -50,17 +52,15 @@ const Weapon = () => {
     });
 
     if (test.includes(id)) {
-      // document.getElementById(`${id}`).innerHTML = "Add";
-
       await axios.put(
         `http://localhost:4000/users/removecart/${local.email}/${id}`
       );
     } else {
-      // document.getElementById(`${id}`).innerHTML = "Remove";
-
+      
       await axios.put(
         `http://localhost:4000/users/yourcart/${local.email}/${id}`
       );
+
     }
     test = [];
     getDataEmail();

@@ -48,7 +48,7 @@ input[value="Register"] {
   border-radius: 15px;
   font-size: 20px;
 }
-input[value="submit"]:hover {
+input[value="Register"]:hover {
   background: #fff;
   color: #ddca20;
 }

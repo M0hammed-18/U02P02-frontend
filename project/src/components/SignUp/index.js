@@ -57,7 +57,7 @@ export default class Signup extends Component {
   render() {
     return (
       <>
-        <Nav />
+        {/* <Nav /> */}
         <div>
           <div className="contener">
             <div className="formDiv">
@@ -97,7 +97,6 @@ export default class Signup extends Component {
                   className="btn btn-danger btn-block"
                   value="Register"
                 />
-                <p id="paragraph">Do you have account </p>
               </form>
             </div>
           </div>

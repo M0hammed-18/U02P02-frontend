@@ -46,7 +46,7 @@ const Login = () => {
   };
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div>
         <div className="contener">
           <div className="formDiv">
