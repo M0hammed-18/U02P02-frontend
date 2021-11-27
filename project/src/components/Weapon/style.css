@@ -21,26 +21,30 @@
   margin: 0 auto;
   margin-top: 20px;
   border: solid 1px gray;
+  border-radius: 5%;
   box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
   -webkit-box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
   -moz-box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
   background-color: rgb(228, 226, 226);
 }
 #itemname {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(218, 191, 40);
 }
 #itemprice {
-  font-size: 25px;
+  font-size: 15px;
   color: rgb(80, 80, 80);
 }
 #imag {
   width: 100%;
+  height: 15rem;
+  border-radius: 5%;
 }
 #but {
   margin-top: 5%;
 }
 #ball {
   width: 10%;
+  margin-left: 5px;
   color: gray;
 }

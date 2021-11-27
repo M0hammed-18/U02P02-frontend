@@ -17,7 +17,7 @@ const Home = () => {
         <div className="leftside">
         <img
           id="backlogo"
-          src="https://cdn.wallpapersafari.com/88/76/zU3HLn.png"
+          src="https://cdn.wallpapersafari.com/88/76/zU3HLn.png" alt="#"
         />
         </div>
         <div className="row">

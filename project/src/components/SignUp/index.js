@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Nav from "../Nav/index";
 import axios from "axios";
 import "./style.css";
 export default class Signup extends Component {
@@ -52,12 +51,12 @@ export default class Signup extends Component {
         email: "",
         password: "",
       });
-    } else window.alert("fill all fields");
+    } else window.alert(" all fields are requier");
   }
   render() {
     return (
       <>
-        {/* <Nav /> */}
+        
         <div>
           <div className="contener">
             <div className="formDiv">

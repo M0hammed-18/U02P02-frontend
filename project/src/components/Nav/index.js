@@ -9,7 +9,6 @@ import {
   GiHeavyArrow,
 } from "react-icons/gi";
 import { BsFillCartFill } from "react-icons/bs";
-// import {  } from "react-icons/gr";
 import { IoLogIn, IoLogOut } from "react-icons/io5";
 import logo from "../imges/logo.jpg";
 

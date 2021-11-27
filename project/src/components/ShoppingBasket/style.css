@@ -3,79 +3,28 @@
   height: auto;
   box-sizing: border-box;
 }
-.maindsplay{
+.maindsplay {
   display: grid;
   grid-template: auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 80px;
-  /* border: brown solid 4px; */
   width: 90%;
 }
-.mainshop{
-  /* display: grid;
-  grid-template: auto auto ;
-  grid-template-columns: 1fr 1fr ; */
-  /* flex-direction: column;
-  justify-content: space-between; */
-  /* margin-top: 80px;
-  border: brown solid 4px;
-  width: 40%; */
 
-}
-/* .mainwrapper {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  grid-row-gap: 20px;
-  padding-bottom: 10px;
-  width: 90%;
-  margin-top: 100px;
-  border-radius: 80%;
-} */
-/* .full {
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
-  border: solid 1px gray;
-  box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
-  -webkit-box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
-  -moz-box-shadow: -15px -5px 19px 1px rgba(0, 0, 0, 0.81);
-  background-color: rgb(228, 226, 226);
-} */
-/* #itemname {
-  font-size: 20px;
-  color: rgb(218, 191, 40);
-}
-#itemprice {
-  font-size: 25px;
-  color: rgb(80, 80, 80);
-}
-#imag {
-  width: 100%;
-}
-#but {
-  margin-top: 5%;
-}
-#ball {
-  width: 10%;
-  color: gray;
-} */
-.imagshop{
+.imagshop {
   width: 50%;
 }
-#titel{
+#titel {
   font-size: 20px;
   margin-top: 130px;
   text-align: center;
   color: brown;
 }
-#balldel{
+#balldel {
   width: 10%;
   color: white;
 }
-#itempricedel{
+#itempricedel {
   font-size: 25px;
   color: rgb(211, 211, 211);
 }

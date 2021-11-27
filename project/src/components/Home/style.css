@@ -23,7 +23,7 @@
   padding: 10px;
 }
 .start {
-  top: 490px;
+  top: 450px;
   background-color: rgb(26, 23, 23);
   opacity: 0.9;
 }
@@ -32,12 +32,9 @@
   position: relative;
   display: flex;
   margin-top: 80px;
-  /* align-items: center; */
-  /* text-decoration: none; */
-  /* right: 210px; */
+ 
   margin-right: 120px;
-  /* height: 100%; */
-  /* cursor: pointer; */
+  
   background-color: rgb(218, 191, 40);
   border-radius: 60%;
 }
@@ -45,10 +42,6 @@
   opacity: 0.4;
   height: 45.5rem;
 }
-/* .banner {
-  background-image: "https://cdn.wallpapersafari.com/88/76/zU3HLn.png";
-} */
-
 @media  screen and (max-width: 1084px){
   
 }
